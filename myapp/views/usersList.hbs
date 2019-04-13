@@ -1,0 +1,25 @@
+<table>
+    <thead>
+        <th>
+            name
+        </th>
+        <th>
+            id
+        </th>
+    </thead>
+    <tbody>
+        {{#each users}}
+        <tr>
+            <td>
+                {{this.name}}
+            </td>
+             <td>
+                {{this.id}}
+            </td>
+            <td>
+                <a href="/users/edit/{{@index}}">edit</a>
+            </td>
+        </tr>
+        {{/each}}
+    </tbody>
+</table>
